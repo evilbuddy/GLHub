@@ -1,0 +1,72 @@
+::root {
+    --1: #2D3047;
+    --2: #61E786;
+    --3: #99907D;
+    --4: #72A1E5;
+    --5: #A44200;
+}
+
+* {
+    font-family: Arial;
+    color: white;
+}
+
+body {
+    background-color: #171717;
+    margin: 0;
+    margin-top: 100px;
+}
+
+body * {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    height: 100px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: transparent;
+    animation: unscroll 300ms 1;
+}
+
+header.scrolled {
+    background-color: black;
+    animation: scroll 300ms 1;
+}
+
+header * {
+    font-size: 70px;
+}
+
+input {
+    background-color: #EDEDED;
+    color: black;
+    margin: 10px;
+    width: calc(100vw - 20px);
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 35px;
+}
+
+@keyframes scroll {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+@keyframes unscroll {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: transparent;
+    }
+}
