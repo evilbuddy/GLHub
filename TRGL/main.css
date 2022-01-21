@@ -8,6 +8,10 @@ body {
 	margin: 0;
 }
 
+#play {
+	display: none;
+}
+
 .search {
 	position: absolute;
 	height: 50px;

@@ -5,9 +5,25 @@ function search() {
 	window.open(url + txt, "_self");
 }
 
+function playMusic() {
+	var mus = document.getElementById("music");
+
+	mus.currentTime = ( 2 * 60 ) + 58;
+	mus.play();
+
+	document.getElementById("play").style.display = "none";
+}
+
 window.addEventListener("DOMContentLoaded", () => {
 	var mus = document.getElementById("music");
 
 	mus.currentTime = 22.5;
 	mus.play();
+	
+	setTimeout(() => {
+		if(mus.paused) {
+			alert("The music hasn't started properly. You can play it using the button at the top of the page !");
+			document.getElementById("play").style.display = "block";
+		}
+	}, 300)
 });
