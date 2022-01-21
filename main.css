@@ -42,6 +42,20 @@ header * {
     font-size: 70px;
 }
 
+header img {
+    height: 100%;
+}
+
+header img[src="Evil Buddy.png"] {
+    float: right;
+}
+
+header h1 {
+    float: right;
+    display: inline;
+    padding-right: 10px;
+}
+
 input {
     background-color: #EDEDED;
     color: black;
@@ -51,6 +65,15 @@ input {
     border: none;
     border-radius: 40px;
     font-size: 35px;
+}
+
+input:hover {
+    cursor: pointer;
+    background-color: #CCCCCC;
+}
+
+input:active {
+    background-color: #999999;
 }
 
 @keyframes scroll {
