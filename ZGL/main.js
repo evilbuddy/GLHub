@@ -8,6 +8,6 @@ function search() {
 window.addEventListener("DOMContentLoaded", () => {
 	var mus = document.getElementById("music");
 
-	mus.currentTime = ( 2 * 60 ) + 58;
+	mus.currentTime = 22.5;
 	mus.play();
 });
